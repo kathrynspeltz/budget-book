@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="home.css" type="text/css">
+
+    <title>Home</title>
+</head>
+
+<body>
+    <div>
+        <h1>BudgetBook</h1>
+    </div>
+    <div id="transaction-form-container">
+        <form id="transaction-form">
+            <h4>Add A Transaction!</h4>
+            <div class="one-line">
+                <label for="transactionName">Transaction Name</label>
+                <input type="text" name="bookName" id="transactionName" placeholder="What was this for?" />
+            </div>
+            <div class="one-line">
+                <label for="amount">Amount $</label>
+                <input type="text" name="amount" id="amount" placeholder="Transaction Value" />
+            </div>
+            <div>
+                <label for="category">Transaction Category</label>
+                <label for="groceries">Groceries</label>
+                <input type="checkbox" name="category" value="Groceries" id="groceries">
+                <input type="checkbox" name="category" value="Dining Out" id="dining-out">
+                <label for="dining-out">Dining Out</label><br>
+                <input type="checkbox" name="category" value="Utilities" id="utilities">
+                <label for="utilities">Utilities</label><br>
+                <input type="checkbox" name="category" value="Rent/Mortgage" id="rent-mortgage">
+                <label for="rent-mortgage">Rent/Mortgage</label><br>
+                <input type="checkbox" name="category" value="Transportation" id="transportation">
+                <label for="transportation">Transportation</label><br>
+                <input type="checkbox" name="category" value="Healthcare" id="healthcare">
+                <label for="healthcare">Healthcare</label><br>
+                <input type="checkbox" name="category" value="Entertainment" id="entertainment">
+                <label for="entertainment">Entertainment</label><br>
+                <input type="checkbox" name="category" value="Shopping" id="shopping">
+                <label for="shopping">Shopping</label><br>
+                <input type="checkbox" name="category" value="Travel" id="travel">
+                <label for="travel">Travel</label><br>
+                <input type="checkbox" name="category" value="Savings/Investments" id="savings-investments">
+                <label for="savings-investments">Savings/Investments</label><br>
+                <input type="checkbox" name="category" value="Other" id="other">
+                <label for="other">Other</label>
+                <input type="text" name="other-category" id="other-category" placeholder="Enter other category"><br>
+        </form>
+
+    </div>
+    <div class="one-line">
+        <label for="date">Transaction Date</label>
+        <input type="text" name="date" id="date" placeholder="Transaction Date" />
+    </div>
+    <button id="submit-new-book-button">Submit</button>
+    </form>
+    </div>
+
+    <script src="models.py"></script>
+
+</body>
+
+</html>

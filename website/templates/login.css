@@ -1,17 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Laila:wght@300;500&family=Merriweather:wght@300;400;700&family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Secular+One&display=swap');
 
 ul {
     padding: 0;
 }
 
 * {
-    font-family: 'Merriweather', serif;
+    font-family: 'Alegreya Sans', sans-serif;
     margin: 10px auto;
 }
 
 h1 {
-    font-family: 'Special Elite', cursive;
+    font-family: 'Secular One', sans-serif;
     font-size: 65px;
+    color: rgb(3, 93, 3);
+    margin: 0px;
+}
+
+h2 {
+    margin: 0px;
 }
 
 .outline-box {
@@ -33,7 +39,8 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 75%
+    width: 75%;
+    margin: 50px 0px;
 }
 
 .intro-form {
