@@ -15,6 +15,10 @@
     <div>
         <h1>BudgetBook</h1>
     </div>
+    <div>This Month's Progress</div>
+    <div id="budget-graph"></div>
+    <div>Recent Transactions</div>
+    <div id="transaction-population"></div>
     <div id="transaction-form-container">
         <form id="transaction-form">
             <h4>Add A Transaction!</h4>
@@ -27,9 +31,9 @@
                 <input type="text" name="amount" id="amount" placeholder="Transaction Value" />
             </div>
             <div>
-                <label for="category">Transaction Category</label>
-                <label for="groceries">Groceries</label>
+                <label for="category">Transaction Category</label><br>
                 <input type="checkbox" name="category" value="Groceries" id="groceries">
+                <label for="groceries">Groceries</label>
                 <input type="checkbox" name="category" value="Dining Out" id="dining-out">
                 <label for="dining-out">Dining Out</label><br>
                 <input type="checkbox" name="category" value="Utilities" id="utilities">
@@ -56,7 +60,7 @@
     </div>
     <div class="one-line">
         <label for="date">Transaction Date</label>
-        <input type="text" name="date" id="date" placeholder="Transaction Date" />
+        <input type="date" name="date" id="date" placeholder="Transaction Date" />
     </div>
     <button id="submit-new-book-button">Submit</button>
     </form>
