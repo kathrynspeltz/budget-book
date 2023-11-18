@@ -6,12 +6,17 @@
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="login.css" type="text/css">
+    <link rel="stylesheet" href="/website/static/login.css" type="text/css">
 
     <title>Login</title>
 </head>
 
 <body>
+    <nav>
+        <ol>
+            <li class="crumb"><a href="/sign-up">Create An Account</a></li>
+        </ol>
+    </nav>
     <style>
         body {
             background-image: url("https://images.unsplash.com/photo-1459257831348-f0cdd359235f");
@@ -25,27 +30,27 @@
         <div class="budgetbook-header">
             <div class="budgetbook">
                 <h2>Welcome back to</h2>
-                <h1>BudgetBook</h1>
+                <h1>BudgetBook {{text}}</h1>
                 <h2>we make budget tracking easy!</h2>
             </div>
         </div>
         <div class="container-md">
             <div class="outline-box">
                 <h4>Login</h4>
-                <form id="login-form">
+                <form id="login-form" method="post">
                     <div class="form-group">
-                        <label for="login-username">Username</label>
-                        <input type="text" id="login-username" placeholder="Username">
+                        <label for="username">Username</label>
+                        <input type="text" name="username" id="username" placeholder="Username">
                     </div>
                     <div class="form-group">
-                        <label for="login-password">Password</label>
-                        <input type="password" id="login-password" placeholder="Password">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" placeholder="Password">
                     </div>
-                    <div>
-                        <button id="submit-button" type="submit" class="btn btn-primary">Submit</button>
+                    <div class="login-btns">
+                        <button id="submit-button" type="submit">Login</button>
                     </div>
                     <div class="one-line">
-                        <p>New users head to our &nbsp;</p><a href="./register.html">Register</a>
+                        <p>New users head to our &nbsp;</p><a href="/register">Register</a>
                         <p>&nbsp; page</p>
                     </div>
                 </form>

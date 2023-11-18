@@ -6,12 +6,17 @@
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="login.css" type="text/css">
+    <link rel="stylesheet" href="/website/static/register.css" type="text/css">
 
     <title>Register</title>
 </head>
 
 <body>
+    <nav>
+        <ol>
+            <li class="crumb"><a href="/logout">Create An Account</a></li>
+        </ol>
+    </nav>
     <style>
         body {
             background-image: url("https://images.unsplash.com/photo-1459257831348-f0cdd359235f");
@@ -29,23 +34,25 @@
                 <h2>we make budget tracking easy!</h2>
             </div>
         </div>
+        alert({{ message }})
+
         <div class="container-md">
             <div class="outline-box">
                 <h4>New User? Register below:</h4>
-                <form id="register-form">
+                <form id="register-form" method="post">
                     <div class="form-group">
-                        <label for="register-username">Username</label>
-                        <input type="text" id="register-username" placeholder="Username">
+                        <label for="username">Username</label>
+                        <input type="text" name="username" id="username" placeholder="Username">
                     </div>
                     <div class="form-group">
-                        <label for="register-password">Password</label>
-                        <input type="password" id="register-password" placeholder="Password">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" placeholder="Password">
                     </div>
                     <div class="login-btns">
-                        <button id="submit-button" type="submit" class="btn btn-primary">Submit</button>
+                        <button id="submit-button" type="submit">Submit</button>
                     </div>
                     <div class="one-line">
-                        <p>Returning users head to our &nbsp;</p><a href="./login.html">Login</a>
+                        <p>Returning users head to our &nbsp;</p><a href="/login">Login</a>
                         <p>&nbsp; page</p>
                     </div>
                 </form>

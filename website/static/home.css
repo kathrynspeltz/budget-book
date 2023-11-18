@@ -18,6 +18,12 @@ h1 {
     padding: 0px 20px;
 }
 
+.crumb {
+    margin: 1rem;
+    display: inline;
+    text-align: center;
+}
+
 #transaction-form-container {
     padding: 10px;
     flex-direction: row;

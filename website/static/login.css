@@ -43,6 +43,13 @@ h2 {
     margin: 50px 0px;
 }
 
+.crumb {
+    margin: 1rem;
+    display: inline;
+    text-align: center;
+}
+
+
 .intro-form {
     align-content: left;
 }
